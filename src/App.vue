@@ -1,7 +1,7 @@
 <template>
   <div id="app">    
     <app-header v-bind:title="msg"></app-header>
-    <PageContent v-bind:itemsList = "itemsListInput"/>
+    <!-- <PageContent v-bind:itemsList = "itemsListInput"/> -->
     <router-view></router-view>
     <app-footer></app-footer>
   </div>
@@ -11,7 +11,7 @@
 //Registering components Locally
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
-import PageContent from './components/PageContent.vue'
+// import PageContent from './components/PageContent.vue'
 export default {
   name: 'App',
   data(){
@@ -35,7 +35,7 @@ export default {
     'app-header':Header,
     'app-footer':Footer,
     //Registering without a name
-    PageContent
+    // PageContent
   }
 }
 </script>
